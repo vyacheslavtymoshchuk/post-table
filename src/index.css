@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
 
 .App {
   text-align: center;
-  padding: 30px 50px 50px 50px;
+  padding: 30px 250px 50px 250px;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 
 .table__container {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
@@ -63,7 +63,7 @@ input[type="text"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .add-post__container {
@@ -87,7 +87,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .add-button {
@@ -105,4 +105,22 @@ button {
 
 .delete-button:hover {
   background-color: #ff0000;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    padding: 30px 150px 50px 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .App {
+    padding: 30px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 426px) {
+  .App {
+    padding: 30px 5px 50px 5px;
+  }
 }
