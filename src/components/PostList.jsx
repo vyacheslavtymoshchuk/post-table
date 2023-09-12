@@ -46,9 +46,9 @@ const PostList = () => {
   return (
     <div>
       <h1>Post Table</h1>
-      <div className="search-post-container">
+      <div className="search-post__container">
         <input
-          className="search-post-input"
+          className="search-post__input"
           type="text"
           placeholder="Search by title"
           value={searchTerm}
@@ -56,16 +56,16 @@ const PostList = () => {
         />
       </div>
 
-      <div className="add-post-container">
+      <div className="add-post__container">
         <input
-          className="add-post-input"
+          className="add-post__input"
           type="text"
           placeholder="Title"
           value={newPost.title}
           onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
         />
         <input
-          className="add-post-input"
+          className="add-post__input"
           type="text"
           placeholder="Body"
           value={newPost.body}
@@ -73,7 +73,7 @@ const PostList = () => {
         />
         <button className="add-button" onClick={handleAddPost}>ADD POST</button>
       </div>
-      <div className="table-container">
+      <div className="table__container">
         <table>
           <thead>
             <tr>

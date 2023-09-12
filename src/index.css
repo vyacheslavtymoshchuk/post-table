@@ -14,7 +14,10 @@ h1 {
   color: #333;
 }
 
-.table-container {
+.table__container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -50,7 +53,7 @@ tbody {
   border: 1px solid #ddd;
 }
 
-.search-post-container {
+.search-post__container {
   display: flex;
 }
 
@@ -63,16 +66,16 @@ input[type="text"] {
   font-family: 'Poppins', sans-serif;
 }
 
-.add-post-container {
+.add-post__container {
   display: flex;
   justify-content: flex-start;
 }
 
-.add-post-input {
+.add-post__input {
   max-width: 43%;
 }
 
-.add-post-input:not(:last-child) {
+.add-post__input:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -84,12 +87,12 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .add-button {
   max-height: 41px;
   min-width: 120px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .add-button:hover {
@@ -98,7 +101,6 @@ button {
 
 .delete-button {
   background-color: #ff3333;
-  font-family: 'Poppins', sans-serif;
 }
 
 .delete-button:hover {
